@@ -1,0 +1,248 @@
+* {
+  list-style: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #F2F4F5;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+/*
+@media screen and (max-width: 460px) {
+  .is-frontend .semplice-navbar {
+    position: fixed !important;
+    transition: ease transform 0.3s !important;
+  }
+  
+  .semplice-navbar.hide-navbar {
+    transform: translateY(-100%) !important;
+  }
+    }
+
+*/
+
+.header-navbar.sticky .removes {
+  display: none;
+}
+
+.header-navbar {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background: #fff;
+  height: 60px;
+  padding: 2px 0 2px 0;
+  transition: all 200ms ease;
+}
+
+.header-navbar.sticky {
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  position: fixed;
+  top: 65px;
+  z-index: 20;
+  opacity: 0.98;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06), 
+  0 2px 4px rgba(0,0,0,0.06), 
+  0 4px 8px rgba(0,0,0,0.06), 
+  0 8px 16px rgba(0,0,0,0.06),
+  0 16px 32px rgba(0,0,0,0.06), 
+  0 32px 64px rgba(0,0,0,0.06);
+}
+
+.header-navbar ul {
+  padding: 0;
+  margin: 0 4rem 0 4rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  background: #fff;
+  }
+  
+  @media screen and (max-width: 460px) {
+    .header-navbar ul {
+      margin: 0 1rem 0 1rem;}
+  }
+
+.header-navbar li {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  background: transparent;
+  border-radius: 20px;
+  transition: all .45s ease;
+}
+
+.header-navbar a{
+  color: #1B2A44;
+  font-size: 16px;
+  z-index: 720;
+  /*font-size: calc(0.5rem + 2.5vmin);*/
+  /*padding: 8px 8px 8px 8px;*/
+  text-decoration: none;
+}
+
+@media screen and (max-width: 460px) {
+  .header-navbar a{
+    font-size: 10px;
+  }
+}
+
+.header-navbar a:active {
+  z-index: 5!important;
+  color: #0FA0E3!important;
+}
+
+/* :not excludes class for specific use */
+.header-navbar a:active:not(.back) {
+  transform: scale(1.2);
+}
+
+.active {
+  z-index: 5!important;
+  font-weight:600;
+  color: #0FA0E3!important;
+}
+
+.header-navbar button.back {
+  opacity: 0;
+  padding-left: 2vw;
+  font-size: 20px;
+  border: 0px;
+  outline: none;
+  background: none;
+  color: #333;
+  height: 50px;
+  cursor: pointer;
+  transition: all .45s ease;
+}
+
+.header-navbar.sticky button.back {
+  opacity: 1; 
+}
+
+.con-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  /*overflow: hidden;*/
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.effect {
+  /*background: rgba(232, 76, 232, 0.15);*/
+  /*background: rgba(242, 112, 100, 0.96);*/
+  /*background: rgba(235, 238, 244, 0.95);*/
+  background:  rgb(235,238,244);
+  width: 178px;
+  height: 36px;
+  position: absolute;
+  left: 130px;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 460px) {
+  .effect {
+    width: 20vw;
+    height: 10vw;
+    border-radius: 20px; }
+}
+/* Content sections styling */
+
+  .banner {
+    width: 1600px;
+    height: 65px;
+    background-image: url("banner.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: fixed;
+    top:0px; 
+  }
+
+
+  .hero-section{
+    width: 1600px; 
+    height: 400px;
+    position: inherit;
+    margin-top: 65px;
+    background-size: 1600px 400px;
+    background-image: url("hero2.png");
+    background-repeat: no-repeat;
+  }
+
+.section{
+color: #666;
+width:100%;
+/*height: 500px;*/
+/*padding: 8px 32px 40px 32px;*/
+}
+
+#first {
+    width: 1600px; 
+    height: 847px;
+    position: inherit;
+    margin-top: 60px;
+    background-size: 1600px 847px;
+    background-image: url("Section1.png");
+    background-repeat: no-repeat;
+  }
+
+#second {
+  width: 1600px; 
+  height: 918px;
+  background-size: 1600 918px;
+  background-image: url("Section2.png");
+  background-repeat: no-repeat;
+}
+
+#third {  
+  width: 1600px; 
+  height: 705px;
+  background-size: 1600px 705px;
+  background-image: url("Section3.png");
+  background-repeat: no-repeat;
+}
+
+#fourth {  
+  width: 1600px; 
+  height: 910px;
+  background-size: 1600px 910px;
+  background-image: url("Section4.png");
+  background-repeat: no-repeat;
+}
+
+#fifth {
+  background-color: #a388e8;
+}
+
+#bottom-spacer {
+  height: 1200px;
+}
+
