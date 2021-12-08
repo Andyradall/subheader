@@ -15,6 +15,11 @@ body {
   width: 100%;
 }
 
+p {
+  font-size: 14px;
+}
+
+
 main {
   width: 100%;
 }
