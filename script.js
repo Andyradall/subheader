@@ -1,3 +1,8 @@
+//Button
+function thxAlert() {
+    alert("Thank you for subscribing to AF Gruppen!");
+  }
+
 //Scroll smooth after clicking jumpto link
 (function($) {
     $(document).on('click', 'a[href^="#"]', function(e) {
@@ -59,7 +64,7 @@
     });
 
 // cache the navigation links 
-var $navigationLinks = $('#sub-navigation > ul > li > a');
+var $navigationLinks = $('#sub-navigation .contain > ul > li > a');
 // cache (in reversed order) the sections
 var $sections = $($(".section").get().reverse());
 
@@ -67,7 +72,7 @@ var $sections = $($(".section").get().reverse());
 var sectionIdTonavigationLink = {};
 $sections.each(function() {
     var id = $(this).attr('id');
-    sectionIdTonavigationLink[id] = $('#sub-navigation > ul > li > a[href=\\#' + id + ']');
+    sectionIdTonavigationLink[id] = $('#sub-navigation .contain > ul > li > a[href=\\#' + id + ']');
 });
 
 // throttle function, enforces a minimum time interval
