@@ -118,13 +118,14 @@ function highlightNavigation() {
                 // add .active class to the current link
                 $navigationLink.addClass('active');
                 var x = $navigationLink.offset().left;
-                anime({
+                // animate the transition of .effect (removed) 
+                /* anime({
                     targets: '.effect',
                     left: `${x-28}px`,
                     duration: 600,
                     endDelay: 1000,
-                });
-            }
+                }); */
+            }    
             // we have found our section, so we return false to exit the each loop
             return false;
         }

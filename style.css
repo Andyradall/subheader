@@ -93,7 +93,7 @@ main {
 .header-navbar a{
   color: #1B2A44;
   font-size: 14px;
-  z-index: 720;
+  /*z-index: 720;*/
   text-decoration: none;
 }
 
@@ -178,7 +178,7 @@ main {
     width: 1600px; 
     height: 847px;
     position: inherit;
-    margin-top: 60px;
+    margin-top: 1px;
     background-size: 1600px 847px;
     background-image: url("Section1.png");
     background-repeat: no-repeat;
