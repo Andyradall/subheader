@@ -18,28 +18,6 @@ function thxAlert() {
     });
     })(jQuery);
     
-// sticky header on scroll up 
- /* 
-   (function($) {
-        var prev = 0;
-        var $window = $(window);
-        var nav = $('.semplice-navbar');
-      
-        $window.on('scroll', function(){
-          var scrollTop = $window.scrollTop();
-          nav.toggleClass('hide-navbar', scrollTop > prev);
-          prev = scrollTop;
-        });
-      
-        $(window).scroll(function() {
-            if ($(this).scrollTop() <= 300) {
-                $('.semplice-navbar').removeClass('hide-navbar');
-            }
-        });
-        
-      })(jQuery);  
-*/
-
 // Sticky subheader    
     jQuery(document).ready(function() {
         //Enter Your Class or ID
@@ -98,7 +76,6 @@ function throttle(fn, interval) {
 function highlightNavigation() {
     // get the current vertical position of the scroll bar
     var scrollPosition = $(window).scrollTop();
-    //const effect = document.querySelector('.effect')
 
     // iterate the sections
     $sections.each(function() {
@@ -118,13 +95,6 @@ function highlightNavigation() {
                 // add .active class to the current link
                 $navigationLink.addClass('active');
                 var x = $navigationLink.offset().left;
-                // animate the transition of .effect (removed) 
-                /* anime({
-                    targets: '.effect',
-                    left: `${x-28}px`,
-                    duration: 600,
-                    endDelay: 1000,
-                }); */
             }    
             // we have found our section, so we return false to exit the each loop
             return false;

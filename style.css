@@ -29,17 +29,14 @@ main {
 }
 
 .header-navbar {
-  /*margin: 0 auto;*/
   margin: 0 auto;
   padding: 0;
   display: flex;
   align-items: center;
- /* justify-content: space-evenly;*/
   width: 1250px;
   background: #fff;
   height: 60px;
   padding: 2px 0 2px 0;
-  /*transition: all 200ms ease;*/
 }
 
 .contain {
@@ -79,7 +76,6 @@ main {
   }
 
 .header-navbar li {
-  /*width: 160px;*/
   margin: 0 40px 0 0;
   height: 40px;
   display: flex;
@@ -95,7 +91,6 @@ main {
 
   color: #1B2A44;
   font-size: 14px;
-  /*z-index: 720;*/
   text-decoration: none;
 }
 
