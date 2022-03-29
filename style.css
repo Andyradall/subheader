@@ -100,9 +100,9 @@ main {
 }
 
 /* :not excludes class for specific use */
-.header-navbar a:active:not(.back) {
-  transform: scale(1.2);
-}
+/*.header-navbar a:active:not(.back) {
+  transform: scale(1.1);
+}*/
 
 .active {
   z-index: 5!important;
