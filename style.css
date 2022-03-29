@@ -106,7 +106,7 @@ main {
 
 .active {
   z-index: 5!important;
-  font-weight:600;
+  font-weight:500;
   color: #0FA0E3!important;
   /*border-bottom: 3px solid #0FA0E3;
   padding-bottom: 9px !important;
